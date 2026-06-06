@@ -8,15 +8,17 @@
 # Build-from-source Rust formula: `cargo install` the `kovra` binary (the crate
 # at crates/cli publishes as `kovra` and produces the `kovra` bin). `url` points
 # at the GitHub release source tarball for the tag; `sha256` is the digest of
-# that tarball. Pinned to the public-debut tag v0.8.2 at go-live (KOV-51).
+# that tarball. Pinned to v0.8.3 — the first source tag that packages the
+# conventions template inside the crate (v0.8.0–v0.8.2 failed to build from
+# source). The built binary reports 0.8.0 (the workspace version).
 # Subsequent releases bump `url`/`sha256` automatically via release-homebrew.yml
 # (`brew bump-formula-pr`). Homebrew builds from source and does not depend on
 # crates.io.
 class Kovra < Formula
   desc "Local secrets manager for development, exposed over MCP for AI agents"
   homepage "https://kovra.sh"
-  url "https://github.com/kaeus-inc/kovra-core/archive/refs/tags/v0.8.2.tar.gz"
-  sha256 "bf73c68fb7429552dd034762bd3c31ce371c4d57a46f059557d5e56ba81f22a4"
+  url "https://github.com/kaeus-inc/kovra-core/archive/refs/tags/v0.8.3.tar.gz"
+  sha256 "79903e86f1ff89a8a0bb3c8247ff1c461302a1e7117af79c422ea26a1992479e"
   license "BUSL-1.1"
   head "https://github.com/kaeus-inc/kovra-core.git", branch: "main"
 
