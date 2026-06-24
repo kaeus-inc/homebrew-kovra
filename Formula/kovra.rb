@@ -17,8 +17,8 @@
 class Kovra < Formula
   desc "Local secrets manager for development, exposed over MCP for AI agents"
   homepage "https://kovra.sh"
-  url "https://github.com/kaeus-inc/kovra-core/archive/refs/tags/v0.8.3.tar.gz"
-  sha256 "79903e86f1ff89a8a0bb3c8247ff1c461302a1e7117af79c422ea26a1992479e"
+  url "https://github.com/kaeus-inc/kovra-core/archive/refs/tags/v0.9.1.tar.gz"
+  sha256 "ccc599aa802de2b63f32f4ca4e0e37487d3b5a2d7bcdb87abc6276ad2d74f2c7"
   license "BUSL-1.1"
   head "https://github.com/kaeus-inc/kovra-core.git", branch: "main"
 
